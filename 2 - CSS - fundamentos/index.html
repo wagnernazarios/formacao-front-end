@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS fundamentos</title>
+    <!--* Internal CSS-->
+    <style>
+        p {
+            /* color: gray; */
+            font-size: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="list.css">
+</head>
+
+<body>
+    <!--* CSS inline-->
+    <!--Css incluido diretamente na tag pelo atributo style-->
+    <h1 style="color: red">Este é um título</h1>
+    <h1 style="color: blue">Este é outro título</h1>
+
+    <!--*Multiplas regras-->
+    <!--Multiplos elementos de uma vez-->
+    <h1 style="color: purple; font-size: 40px;">Este é mais um título</h1>
+
+
+    <!--* CSS internal-->
+    <!--Css incluido no head pela tag style-->
+    <p>Eu fui estilizado pelo internal</p>
+    <p>E mais um</p>
+    <p>E mais outro</p>
+
+    <!--* CSS Externo-->
+    <!--Css inlcuido no html  pela tag link e o arquivo css de forma externa é um arquivo independente -->
+
+    <h3>Css externo</h3>
+
+    <!--* Ordem CSS-->
+    <!-- O css inline é mais forte que o internal e o externo e o externo é mais forte que o internal-->
+    <p style="color:brown;">Ordem CSS</p>
+
+    <!--* Multiplos arquivos CSS-->
+    <!--Voce pode adicionar quantos arquivos CSS quiser no HEad, porem se houver conflito de interesse vence o ultimo da lista-->
+    <ul>
+        <li>Banana</li>
+        <li>Maçã</li>
+        <li>Limão</li>
+    </ul>
+
+    <!--* classes-->
+    <p class="paragraph">Algum texto</p>
+    <p class="paragraph">Algum texto1</p>
+    <p class="paragraph">Algum texto2</p>
+
+    <h3 id="h3">Este é um titulo com id</h3>
+
+    <!--* Ordem CSS 2-->
+    <!--* Id > Class > Tag-->
+
+    <h5> Isto é um Titulo</h5>
+    <h5 class="titulo"> Isto é um Título com classe</h5>
+    <h5 class="titulo" id="titulo"> Isto é um Título com ID</h5>
+
+    <!--* Cores -->
+    <p class="color-name">Qualquer texto para nome de cores</p>
+
+    <p class="hex">Paragráfo com hex</p>
+
+    <p class="rgb">Este esta sendo estilizado com RGB</p>
+    <p class="mixed-rgb">Esse também</p>
+
+    <p class="rgba">Estilizado com rgba</p>
+
+    <p class="hsl">Este foi estilizado com hsl</p>
+    <p class="hsl-2">Este foi estilizado com hsl 2</p>
+
+    <!--* Cores no background-->
+
+    <p class="bg">Cores no background</p>
+    <p class="bg-2">Cores no background 2</p>
+
+    <!--*position sticky-->
+    <div class="sticky">
+        <span>Eu sou sticky</span>
+    </div>
+
+    <!--* background opacity-->
+
+    <div class="bg-opacity">
+        <p>Estou aqui!</p>
+    </div>
+    <div class="bg-opacity-2">
+        <p>Estou quase visível</p>
+    </div>
+
+    <!--* Se quer apenas por opacity na div e não nos filhos, utilize o RGBA invés do Opacity-->
+    <div class="bg-opacity-3">
+        <p>RGBA com opacidade!</p>
+    </div>
+
+    <!--* bg image-->
+    <div class="bg-image">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</h1>
+    </div>
+
+    <div class="bg-position"></div>
+    <div class="bg-centered"></div>
+
+    <!--*  width & height-->
+
+    <div class="width-height"></div>
+    <div class="width-height-2"></div>
+
+    <!--* Padding-->
+    <div class="without-padding">Este texto não tem padding</div>
+    <div class="padding">Este texto tem padding</div>
+
+    <!--* Padding individual-->
+    <div class="padding-individual">Este texto tem padding individual</div>
+
+    <!--* padding shorthand-->
+    <div class="shorthand-1">Este texto tem shorthand padding</div>
+    <div class="shorthand-2">Este texto tem shorthand padding</div>
+
+    <!--*Padding com width-->
+
+    <div class="without-border-box">
+        <p>Algum conteúdo</p>
+    </div>
+    <div class="border-box">
+        <p>Algum conteúdo 2</p>
+    </div>
+
+    <!--*Borda-->
+    <div class="border">bordas</div>
+    <div class="border-2">Bordas 2
+    </div>
+
+    <!--*border individual-->
+
+    <div class="border-individual">Bordas individuais</div>
+
+    <!--*Border radius-->
+    <div class="border-radius">
+        <p>Testa diaria ,em </p>
+    </div>
+
+    <!--*Text-Align-->
+    <p class="align-right">Posicionado a direita</p>
+    <div class="container-center">
+        <h2>Texto centralizado</h2>
+        <p>testo qualquer</p>
+    </div>
+
+    <!--*Text-decoration-->
+    <p class="underline">Eu tenho um underline</p>
+    <p class="line-through">Eu tenho um risco</p>
+    <a href="#" class="remove-underline">Removendo underline</a>
+
+    <!--*Text-transform-->
+    <p class="upper">Este texto está em caixa alta</p>
+    <p class="lower">ESTE ESTÁ EM CAIXA BAIXA</p>
+
+    <!--* letter spacing-->
+    <h2 class="spacing">Eu tenho um espamento maior</h2>
+
+    <!--* fontes -->
+
+    <p class="serif">serif font</p>
+    <p class="sans-serif">sans serif font</p>
+    <p class="monospace">monospace fonts</p>
+    <p class="cursive">coursive fonts</p>
+    <p class="fantasy">fantasy fonts</p>
+
+    <!--*Font style-->
+
+    <p class="oblique">Esse texto esta oblique</p>
+    <p class="italic">Esse texto esta italic</p>
+
+
+    <!--*Font weight-->
+    <p class="thin">Tenho pouco peso</p>
+    <p class="bold">Eu tenho peso</p>
+    <p class="bolder">Eu tenho bastante peso</p>
+
+    <!--*position-->
+
+    <div class="container-relative">
+        <div class=" absolute1">1</div>
+        <div class=" absolute2">2</div>
+    </div>
+
+    <div class="fixed">
+        <span>Estou fixo</span>
+    </div>
+
+    <!--*z-index-->
+    <div class="container-relative">
+        <div class=" absolute3">3</div>
+        <div class=" absolute4">4</div>
+        <div class=" absolute5">5</div>
+    </div>
+
+</body>
+
+</html>

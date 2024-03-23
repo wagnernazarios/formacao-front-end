@@ -1,0 +1,364 @@
+body {
+  padding-bottom: 500px;
+}
+
+h3 {
+  color: gold;
+  font-size: 50px;
+}
+
+/* p {
+  color: burlywood;
+} */
+
+/* Este é um Comentário no css */
+
+/* Classes */
+
+.paragraph {
+  background-color: #000;
+  color: aqua;
+  padding: 5px;
+}
+
+#h3 {
+  background-color: purple;
+  color: chartreuse;
+  padding: 15px;
+}
+
+/* id > class > tag*/
+
+h5 {
+  border-bottom: 2px solid red;
+}
+
+.titulo {
+  border-bottom: 2px solid blue;
+}
+
+#titulo {
+  border-bottom: 2px dotted tomato;
+}
+
+/** Nome de cores*/
+
+.color-name {
+  color: crimson;
+}
+
+.hex {
+  color: #17a;
+}
+
+.rgb {
+  color: rgb(255, 0, 0);
+}
+
+.mixed-rgb {
+  color: rgb(99, 155, 99);
+}
+
+.rgba {
+  color: rgba(100, 155, 29, 0.4);
+}
+
+.hsl {
+  color: hsl(100, 40%, 70%);
+}
+.hsl-2 {
+  color: hsl(244, 50%, 75%);
+}
+
+.bg {
+  color: #ff2;
+  background-color: #000;
+}
+
+.bg-2 {
+  color: #2255ff;
+  background-color: rgb(55, 22, 122);
+}
+
+/** Dando transparencia a um elemento e seu filho*/
+.bg-opacity {
+  background-color: #17a;
+  opacity: 0.3;
+}
+.bg-opacity-2 {
+  background-color: #666;
+  opacity: 0.8;
+  color: #000;
+}
+
+/** Utilizando o rgba inves do Opacity*/
+.bg-opacity-3 {
+  background-color: rgba(100, 155, 29, 0.2);
+
+  color: #000;
+}
+
+.bg-image {
+  background: url("https://picsum.photos/seed/picsum/200/300");
+}
+
+.bg-position,
+.bg-centered {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  background-image: url("https://raw.githubusercontent.com/DenverCoder1/minimalistic-wallpaper-collection/main/images/Electronic_Sample_96-calm-night.png");
+}
+
+.bg-centered {
+  background-size: cover;
+  background-position: center;
+}
+
+/** Largura e altura*/
+
+.width-height {
+  height: 200px;
+  width: 100px;
+  background-color: #f00;
+}
+.width-height-2 {
+  height: 200px;
+  background-color: #222;
+}
+
+/** Padding*/
+.padding {
+  color: #f00;
+  padding: 20px;
+}
+
+/** Padding individual*/
+
+.padding-individual {
+  color: #fff;
+  background-color: #333;
+  font-size: 48px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+/**shorthand padding*/
+
+.shorthand-1 {
+  color: #fff;
+  background-color: #b9b9b9;
+  font-size: 48px;
+  padding: 10px 20px;
+}
+.shorthand-2 {
+  color: #fff;
+  background-color: #b9b9b9;
+  font-size: 48px;
+  padding: 5px 10px 20px 30px;
+}
+
+/**padding com witdh*/
+
+.without-border-box {
+  background-color: #444;
+  color: #fff;
+  width: 400px;
+  padding: 50px;
+}
+.border-box {
+  background-color: #888;
+  color: #fff;
+  width: 400px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+/**bordas*/
+
+.border {
+  border: 2px solid red;
+}
+
+.border-2 {
+  border: 3px dotted blue;
+}
+/**borda individual*/
+.border-individual {
+  padding: 5px;
+  background-color: #ccc;
+  border-top: 2px solid tomato;
+  border-left: 3px dotted violet;
+  border-bottom: 4px double cyan;
+  border-right: 3px groove lightgreen;
+}
+
+/**border radius*/
+
+.border-radius {
+  background-color: #111;
+
+  border-radius: 6px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.container-center {
+  text-align: center;
+  width: 300px;
+  border: 1px solid #f00;
+}
+
+/*terxt-decoration*/
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.remove-underline {
+  text-decoration: none;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.spacing {
+  letter-spacing: 15px;
+}
+
+.serif {
+  font-family: serif;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.fantasy {
+  font-family: fantasy;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.thin,
+.bold,
+.bolder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+/**position*/
+
+.container-relative {
+  border: 2px solid #17a;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.absolute1,
+.absolute2 {
+  background-color: #2255ff;
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+.absolute1 {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+.absolute2 {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+}
+
+.fixed {
+  position: fixed;
+  top: 200px;
+  right: 20%;
+  background-color: #2255ff;
+  color: #fff;
+  padding: 25px;
+}
+
+.sticky {
+  position: sticky;
+  top: 20px;
+  background-color: #2255ff;
+  color: #fff;
+  padding: 27px;
+}
+
+/**z-index*/
+
+.absolute3,
+.absolute4,
+.absolute5 {
+  background-color: #2255ff;
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+.absolute3 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #ff2;
+  z-index: 3;
+}
+.absolute4 {
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  background-color: #17a;
+  z-index: 2;
+}
+.absolute5 {
+  position: absolute;
+  top: 22px;
+  left: 45px;
+  background-color: #ff2222;
+  z-index: 1;
+}
