@@ -26,6 +26,55 @@
             <input type="text" name="age">
 
         </div>
+        <!-- Select-->
+        <div>
+            <label for="job">Selecione sua profissão</label>
+            <select name="job" id="job">
+                <option value="#">Profissões</option>
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+
+        <!--Atributo selected-->
+        <!--Serve para selecionar qual option deve mostrar primeiro-->
+        <div>
+            <label for="contract">Você leu os termos de contrato</label>
+            <select name="contract" id="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+
+            </select>
+        </div>
+        <!-- multiplas seleções-->
+        <div>
+            <label for="items"></label>
+            <select name="items" id="items" multiple>
+                <option value="pera">Pêra</option>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arroz</option>
+                <option value="milho">Milho</option>
+
+            </select>
+        </div>
+
+        <!--Textarea-->
+        <div>
+            <label for="comments">Escreva abaixo o que achou do post:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+
+        <!--Fieldset e legend-->
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text">
+            </fieldset>
+        </div>
         <!--envio de form com atributo submit-->
         <input type="submit" value="Enviar">
     </form>
