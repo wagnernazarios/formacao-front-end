@@ -75,6 +75,44 @@
                 <input type="text">
             </fieldset>
         </div>
+
+        <!--Datalist-->
+        <div>
+            <label for="flavor">Escolha um sabor:</label>
+            <input type="text" name="flavor" list="flavors">
+
+            <datalist id="flavors">
+                <option value="Morango"></option>
+                <option value="Cereja"></option>
+                <option value="manga"></option>
+                <option value="Abacaxi"></option>
+            </datalist>
+        </div>
+
+
+        <div>
+            <label for="senha">Digite sua senha:</label>
+            <input type="password">
+        </div>
+
+        <div>
+            <label for="car-model">Escolha seu modelo</label>
+            <div class="radio">
+                <input type="radio" value="BMW" name="car-model">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="BMW" name="car-model">
+                <label for="ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="BMW" name="car-model">
+                <label for="Jaquar">Jaguar</label>
+            </div>
+        </div>
+
+        <!-- resetar formularios -->
+        <input type="reset" value="Resetar">
         <!--envio de form com atributo submit-->
         <input type="submit" value="Enviar">
     </form>
