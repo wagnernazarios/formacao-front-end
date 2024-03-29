@@ -60,6 +60,7 @@
         </div>
 
         <!--Textarea-->
+        <!-- Serve para grandes textos, por exemplo, bios -->
         <div>
             <label for="comments">Escreva abaixo o que achou do post:</label>
             <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
@@ -77,6 +78,7 @@
         </div>
 
         <!--Datalist-->
+        <!-- Dar sugestões de dados -->
         <div>
             <label for="flavor">Escolha um sabor:</label>
             <input type="text" name="flavor" list="flavors">
@@ -89,12 +91,14 @@
             </datalist>
         </div>
 
-
+        <!-- Password/senhha -->
         <div>
             <label for="senha">Digite sua senha:</label>
             <input type="password">
         </div>
 
+        <!-- radio button -->
+        <!-- botão para selecionar um opcao -->
         <div>
             <label for="car-model">Escolha seu modelo</label>
             <div class="radio">
@@ -111,8 +115,95 @@
             </div>
         </div>
 
+        <!-- checkbox -->
+        <!-- lista de opçoes que pode escolher varias de uma vez -->
+        <div>
+            <label for="optionals">Opcionais</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" id="" value="big-tires">
+                <label for="big-tires">Pneus grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" id="" value="turbo-enginer">
+                <label for="turbo-enginer">Moto turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" id="" value="hybrid">
+                <label for="hybrid">Híbrido</label>
+            </div>
+        </div>
+
+        <!-- Datas -->
+
+        <div>
+            <label for="birthday">Data de aniversário</label>
+            <input type="date">
+        </div>
+
+
+        <!-- envio de arquivos -->
+        <div>
+            <label for="image">Insira uma imagem</label>
+            <input type="file" name="image" id="image">
+        </div>
+
+
+        <!-- numeros -->
+
+        <div>
+            <label for="salary">Qual sua renda atual?</label>
+            <input type="number">
+        </div>
+
+        <!-- e-mails -->
+
+        <div>
+            <label for="email">Digite seu e-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <!-- value -->
+
+        <div>
+            <label for="value">Digite algum valore</label>
+            <input type="text" name="value" value="Esse é o meu valor padrão">
+        </div>
+
+        <!-- value -->
+
+        <div>
+            <label for="value">Digite algum valor</label>
+            <input type="text" name="value" value="Esse é o meu valor padrão">
+        </div>
+
+        <!-- disabled -->
+        <!-- Desabilita qualquer input impedindo qualquer alteração -->
+
+        <div>
+            <label for="disable">Tente mudar o valor</label>
+            <input type="text" name="disable" value="Valor já digitado" disabled>
+        </div>
+
+
+        <!-- placeholder -->
+        <!-- Permite inserir uma informaçãos dentro do input -->
+
+        <div>
+            <label for="currentJob">Informe no que está trabalhando no momento:</label>
+            <input type="text" name="currentJob" placeholder="insira seu emprego atual">
+        </div>
+
+        <!-- required -->
+        <!-- força ao usuario a inserir o valor requerido e é inportante para validação de dados -->
+
+        <div>
+            <label for="birthday">Insira seu ano de nascimento</label>
+            <input type="text" name="birthday" placeholder="insira seu aniversário" required>
+        </div>
+
         <!-- resetar formularios -->
         <input type="reset" value="Resetar">
+
         <!--envio de form com atributo submit-->
         <input type="submit" value="Enviar">
     </form>
