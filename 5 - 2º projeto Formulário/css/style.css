@@ -23,8 +23,8 @@ label {
 
 input {
   border: none;
-  border: 1px solid #ccc;
-  border-bottom: 2px solid #999;
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #aaa;
 
   padding: 10px 0;
 }
@@ -75,4 +75,62 @@ textarea {
 
   color: #673ab7;
   border-bottom: 2px solid #673ab7;
+}
+
+.form-body {
+  padding: 30px;
+}
+
+.form-title {
+  margin-bottom: 15px;
+}
+
+.form-body p {
+  margin-bottom: 20px;
+}
+
+.required {
+  color: #b80835;
+}
+
+.box-input {
+  margin-bottom: 35px;
+}
+
+.box-input label {
+  margin-bottom: 15px;
+}
+.block {
+  display: block;
+}
+
+.optional-box {
+  display: inline-block;
+  margin: 0 30px 30px 0;
+}
+
+.optional-box li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.box-input p {
+  margin-bottom: 15px;
+}
+
+.btn-submit {
+  background-color: #673ab7;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border: 2px solid transparent;
+}
+
+.btn-submit:hover {
+  background-color: #fff;
+  color: #673ab7;
+  border-color: #673ab7;
 }
