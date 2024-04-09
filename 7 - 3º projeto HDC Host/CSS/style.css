@@ -45,32 +45,32 @@ img {
   list-style: none;
   text-transform: uppercase;
   margin-left: 25px;
-}
 
-.navbar-item a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.5s;
-}
+  & a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+  }
 
-.navbar-item:hover a {
-  color: #bbb;
-}
+  & a:hover {
+    color: #bbb;
+  }
 
-.default-btn {
-  background-color: #2cc76a;
-  color: #fff;
-  border-radius: 10px;
-  padding: 15px 20px;
-  transition: all 0.5s ease-in-out;
-  border: 2px solid transparent;
-  color: #fff;
-}
+  & .default-btn {
+    background-color: #2cc76a;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid transparent;
+    color: #fff;
+  }
 
-.default-btn:hover {
-  background-color: transparent;
-  border: 2px solid #2cc76a;
-  color: #2cc76a;
+  & .default-btn:hover {
+    background-color: transparent;
+    border: 2px solid #2cc76a;
+    color: #2cc76a;
+  }
 }
 
 .main-banner {
@@ -78,20 +78,19 @@ img {
   background-position: center;
   background-size: cover;
   padding: 10rem 0;
-}
+  & h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 3px 2px 3px;
+    font-weight: bold;
+    font-size: 54px;
+  }
 
-.main-banner h1 {
-  text-align: center;
-  color: #fff;
-  text-shadow: #000 3px 2px 3px;
-  font-weight: bold;
-  font-size: 54px;
-}
-
-.main-banner p {
-  text-align: center;
-  color: #fff;
-  text-shadow: #000 3px 2px 3px;
-  font-weight: bold;
-  font-size: 32px;
+  & p {
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 3px 2px 3px;
+    font-weight: bold;
+    font-size: 32px;
+  }
 }
