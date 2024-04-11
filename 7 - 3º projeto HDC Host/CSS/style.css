@@ -22,6 +22,8 @@ p {
   height: 80px;
   background-color: #232a31;
   padding: 0 2rem;
+  position: sticky;
+  top: 0;
 
   & nav {
     position: relative;
@@ -53,7 +55,7 @@ p {
       }
 
       & a:hover {
-        color: #bbb;
+        color: #4e725d;
       }
 
       & .default-btn {
@@ -116,8 +118,8 @@ p {
       list-style: none;
       text-align: center;
       padding: 20px;
-      border: 2px solid #ccc;
-      border-radius: 20px;
+      border: 2px solid #ddd;
+      border-radius: 18px;
 
       & .fas {
         font-size: 60px;
@@ -147,3 +149,5 @@ p {
     }
   }
 }
+
+/*? Seção de preços */
