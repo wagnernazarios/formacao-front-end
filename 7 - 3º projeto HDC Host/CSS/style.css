@@ -279,6 +279,79 @@ p {
   }
 }
 
+/*? Formulário de contato */
+
+.contact-container {
+  text-align: center;
+  padding: 5rem 0 8rem 0;
+  background-color: #d9d9d9;
+
+  & h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  & p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  & input,
+  textarea {
+    width: 240px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.5);
+    margin: 0 10px 20px;
+  }
+
+  & textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 500px;
+    height: 150px;
+  }
+
+  & input[type="submit"] {
+    display: block;
+    background-color: #2cc76a;
+    margin: 0 auto;
+    box-shadow: none;
+    color: #fff;
+    width: 125px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  & input[type="submit"]:hover {
+    border: 2px solid #2cc76a;
+    color: #2cc76a;
+    background-color: #d9d9d9;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #292929;
+  padding: 1.4rem 0;
+
+  & p {
+    color: #fff;
+    font-weight: bold;
+
+    & a {
+      text-decoration: none;
+      color: #5cbc84;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
 @media screen and (max-width: 475px) {
   .navbar-container {
     & .navbar-items {
@@ -298,6 +371,15 @@ p {
 
   .main-banner {
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+
+    & h1 {
+      font-size: 2.87em;
+      margin-bottom: 2rem;
+    }
+
+    & p {
+      font-size: 1.5rem;
+    }
   }
 
   .service-container {
@@ -311,10 +393,12 @@ p {
   .pricing-container {
     & .plans-container {
       display: flex;
-      flex-direction: column;
-      margin: 0 auto;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
 
       & .plan {
+        margin: 0 auto;
         margin-top: 2rem;
         & ul {
           width: 300px;
@@ -322,6 +406,7 @@ p {
       }
     }
   }
+
   .search-domain-container {
     background-color: #292929;
     padding: 5rem 0;
@@ -340,5 +425,63 @@ p {
       padding: 25px 20px;
       font-size: 18px;
     }
+  }
+
+  .contact-container {
+    text-align: center;
+    padding: 5rem 0 8rem 0;
+    background-color: #d9d9d9;
+
+    & h2 {
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    & p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    & input,
+    textarea {
+      width: 85%;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 5px;
+      border: none;
+      box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.5);
+      margin: 0 10px 20px;
+    }
+
+    & textarea {
+      display: block;
+      margin: 0 auto 20px;
+      height: 150px;
+    }
+
+    & input[type="submit"] {
+      display: block;
+      background-color: #2cc76a;
+      margin: 0 auto;
+      box-shadow: none;
+      color: #fff;
+      width: 125px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    & input[type="submit"]:hover {
+      border: 2px solid #2cc76a;
+      color: #2cc76a;
+      background-color: #d9d9d9;
+    }
+  }
+
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
   }
 }
