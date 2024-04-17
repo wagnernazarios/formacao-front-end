@@ -16,6 +16,7 @@
 <body>
     <div class="container">
 
+        <!-- Barra de navegação -->
         <div class="navbar-container">
             <nav>
                 <a href="#">
@@ -31,12 +32,16 @@
 
             </nav>
         </div>
+
+        <!-- Conteudo principal -->
         <main>
+
             <div class="main-banner">
                 <h1>HDC HOST</h1>
                 <p>Os melhhos serviços de hospedagem do país.</p>
             </div>
 
+            <!-- Seção de serviços -->
             <section class="service-container" id="servicos">
                 <ul>
                     <li>
@@ -63,6 +68,7 @@
                 </ul>
             </section>
 
+            <!-- Seção de planos -->
             <section class="pricing-container" id="precos">
                 <h2>Planos e Preços</h2>
                 <p>Selecione o plano que melhor atende as suas necessidades</p>
@@ -121,7 +127,34 @@
                 </div>
             </section>
 
+            <!-- Seção de busca de dominios -->
+            <section class="search-domain-container">
+                <h2>Qual domínio você quer para seu site?</h2>
+                <p>Pesquise aqui se ele está disponível.</p>
+                <input type="text" id="domain" name="domain" placeholder="Digite seu domínio aqui">
+                <input type="submit" value="Verificar domínio">
+
+
+            </section>
+
+            <!-- seção de contato -->
+            <section class="contact-container">
+                <h2>Mande uma mensagem</h2>
+                <p>Envie uma mensagem, em até 4 horas um especialista entrará em contato</p>
+                <input type="text" id="nome" name="nome" placeholder="digite seu nome">
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                <textarea name="mensagem" id="mensagem"
+                    placeholder="Descreva oque você precisa ou seu projeto..."></textarea>
+                <input type="submit" value="Enviar">
+            </section>
+
         </main>
+
+        <footer>
+            <p>Desenvolvido por <a href="https://github.com/wagnernazarios">Wagner Nazario</a></p>
+        </footer>
+
+
     </div>
 </body>
 
