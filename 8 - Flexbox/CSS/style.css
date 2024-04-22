@@ -1,53 +1,230 @@
-body {
+.flex {
+  display: flex;
+  background-color: #ccc;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+}
+
+.wrap {
   display: flex;
   flex-wrap: wrap;
+
+  & .box {
+    background-color: #444;
+    width: 33%;
+    height: 40px;
+    border: 2px solid red;
+  }
 }
-.plans-container {
+
+.center {
   display: flex;
   justify-content: center;
-  align-content: start;
-  gap: 25px;
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+  }
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+  }
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+  }
+}
+
+.end {
+  display: flex;
+  justify-content: end;
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+  }
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  border: 1px solid blue;
+  & .box {
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    border: 1px solid;
+  }
+}
+
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+  border: 2px solid blue;
+
+  & .box {
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    border: 1px solid;
+  }
+}
+
+.stretch {
+  display: flex;
+  align-items: stretch;
+  height: 200px;
+  border: 1px solid blue;
+
+  .box {
+    width: 50px;
+    height: auto;
+    background-color: #444;
+    border: 2px solid;
+  }
+}
+
+.gap {
+  display: flex;
   flex-wrap: wrap;
-  flex: 1 1 250px;
+  justify-content: center;
+  border: 1px solid green;
+  gap: 10px;
+  .box {
+    width: 32%;
 
-  & ul {
-    & li {
-      list-style: none;
-      padding: 2rem 3rem;
-      background-color: #ddd;
-      text-align: center;
-      font-size: 18px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      color: #333;
-      box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
-    }
+    height: 40px;
+    background-color: #444;
+    border: 2px solid;
+  }
+}
 
-    & .prices {
-      padding: 0.6rem;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin: 0 auto -50px;
-      background-color: #157bad;
-      color: #fff;
-      text-align: center;
-      line-height: 120px;
-      position: relative;
-    }
+.order {
+  display: flex;
+  justify-content: center;
 
-    & .plan-name {
-      background-color: #3a3939;
-      padding-top: 3.54rem;
-      color: #fff;
-      border-radius: 10px 10px 0 0;
-    }
+  & .box {
+    width: 150px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+  }
 
-    .price-btn {
-      background-color: #157bad;
-      color: #fff;
-      border-radius: 0 0 10px 10px;
-      cursor: pointer;
-    }
+  & .one {
+    order: 1;
+  }
+
+  & .two {
+    order: 2;
+  }
+
+  & .three {
+    order: 3;
+  }
+}
+
+.grow {
+  display: flex;
+  justify-content: center;
+
+  & .box {
+    width: 150px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+  }
+
+  & .big {
+    flex-grow: 1;
+  }
+}
+
+.basis {
+  display: flex;
+  justify-content: center;
+
+  & .box {
+    flex-basis: 20px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+  }
+
+  & .big {
+    flex-grow: 1;
+  }
+}
+
+.shrink {
+  display: flex;
+  justify-content: center;
+
+  & .box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+    width: auto;
+  }
+
+  & .small {
+    flex-shrink: 2;
+  }
+}
+.shorthand {
+  display: flex;
+
+  & .box {
+    flex: 1 1 50px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+    width: auto;
+  }
+
+  & .different {
+    flex: 3 1 400px;
+  }
+}
+
+.align-self {
+  display: flex;
+  gap: 20px;
+  height: 400px;
+  align-items: end;
+
+  & .box {
+    height: 50px;
+    background-color: #444;
+    border: 2px solid;
+    width: 32%;
+  }
+
+  & .different {
+    align-self: center;
   }
 }
