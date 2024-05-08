@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.main-container {
+  display: flex;
+
+  & .banner-container,
+  .form-container {
+    flex: 1 1 0;
+    width: 50%;
+  }
+
+  & .banner-container {
+    text-align: right;
+
+    & img {
+      max-width: 380px;
+      width: 100%;
+      margin-top: 15px;
+      margin-right: 25px;
+    }
+  }
+
+  & .form-container {
+    text-align: center;
+
+    & #form-box {
+      width: 350px;
+      border: 1px solid #dbdbdb;
+      margin-top: 30px;
+
+      & #logo-insta {
+        width: 175px;
+        height: 51px;
+        margin: 30px auto 12px;
+      }
+
+      & #login-form {
+        margin-top: 30px;
+
+        & input {
+          display: block;
+          font-size: 16px;
+          padding: 8px 9px;
+          border: 1px solid #dbdbdb;
+          border-radius: 3px;
+          background-color: #fafafa;
+          width: 268px;
+          margin: 10px auto;
+        }
+
+        input[type="submit"] {
+          background-color: #4cb5f9;
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+          border-radius: 8px;
+          padding: 0;
+          margin-top: 15px;
+          height: 30px;
+          transition: 0.3s ease-in-out;
+        }
+        input[type="submit"]:hover {
+          background-color: #1877f2;
+        }
+      }
+    }
+
+    & .separator {
+      position: relative;
+
+      & .line {
+        border: 1px solid #dbdbdb;
+        width: 268px;
+        margin: 25px auto 35px;
+      }
+
+      & span {
+        color: #292929;
+        position: absolute;
+        text-transform: uppercase;
+        background-color: #fff;
+        top: -6px;
+        width: 50px;
+        margin-left: -25px;
+      }
+    }
+
+    & #other-links {
+      padding: 20px;
+
+      & #facebook-login {
+        margin-bottom: 25px;
+
+        & a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #385185;
+
+          & img {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    & #forget-password {
+      a {
+        color: #292929;
+      }
+    }
+
+    & #register-container,
+    #get-app-container {
+      width: 350px;
+    }
+  }
+}
+
+/* footer {
+  width: 100%;
+  & nav {
+    margin-bottom: ;
+    & .footer-links {
+      display: flex;
+
+      li {
+        margin: 0 9px;
+      }
+    }
+  }
+
+  p {
+    position: fixed;
+    bottom: 10px;
+    left: 45%;
+  }
+} */
