@@ -13,18 +13,21 @@ body {
 
 .main-container {
   display: flex;
+  height: 100vh;
+  margin-top: 10px;
 
   & .banner-container,
   .form-container {
-    flex: 1 1 0;
+    flex: 1 2 0;
     width: 50%;
+    height: 98vh;
   }
 
   & .banner-container {
     text-align: right;
 
     & img {
-      max-width: 380px;
+      max-width: 400px;
       width: 100%;
       margin-top: 15px;
       margin-right: 25px;
@@ -35,7 +38,7 @@ body {
     text-align: center;
 
     & #form-box {
-      width: 350px;
+      width: 360px;
       border: 1px solid #dbdbdb;
       margin-top: 30px;
 
@@ -46,16 +49,16 @@ body {
       }
 
       & #login-form {
-        margin-top: 30px;
+        margin-top: 20px;
 
         & input {
           display: block;
           font-size: 16px;
-          padding: 8px 9px;
+          padding: 10px 9px;
           border: 1px solid #dbdbdb;
           border-radius: 3px;
           background-color: #fafafa;
-          width: 268px;
+          width: 278px;
           margin: 10px auto;
         }
 
@@ -65,9 +68,9 @@ body {
           font-size: 14px;
           font-weight: bold;
           border-radius: 8px;
-          padding: 0;
+          padding: 5px;
           margin-top: 15px;
-          height: 30px;
+          height: 35px;
           transition: 0.3s ease-in-out;
         }
         input[type="submit"]:hover {
@@ -82,7 +85,7 @@ body {
       & .line {
         border: 1px solid #dbdbdb;
         width: 268px;
-        margin: 25px auto 35px;
+        margin: 25px auto 25px;
       }
 
       & span {
@@ -100,13 +103,15 @@ body {
       padding: 20px;
 
       & #facebook-login {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
 
         & a {
           display: flex;
           align-items: center;
           justify-content: center;
           color: #385185;
+          font-weight: 600;
+          font-size: 13px;
 
           & img {
             width: 16px;
@@ -125,27 +130,56 @@ body {
 
     & #register-container,
     #get-app-container {
-      width: 350px;
+      width: 360px;
+    }
+
+    #register-container {
+      border: 1px solid #dbdbdb;
+      padding: 20px;
+      margin-top: 10px;
+      a {
+        font-weight: bold;
+        font-size: 16px;
+        color: #0095f6;
+      }
+    }
+
+    #get-app-container {
+      margin-top: 25px;
+      img {
+        width: 136px;
+        height: 40px;
+        margin: 15px 0;
+      }
     }
   }
 }
 
-/* footer {
+footer {
   width: 100%;
-  & nav {
-    margin-bottom: ;
-    & .footer-links {
-      display: flex;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    li {
+      margin-right: 10px;
+      padding: 0 15px;
 
-      li {
-        margin: 0 9px;
+      a {
+        color: #8e8e8e;
       }
     }
   }
 
   p {
-    position: fixed;
-    bottom: 10px;
-    left: 45%;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    color: #8e8e8e;
   }
-} */
+}
