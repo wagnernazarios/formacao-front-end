@@ -9,5 +9,5 @@ Durante o módulo de CSS Responsivo fiz um projeto de uma landing page de um sit
 Durante o módulo de Flexbox construi um clone(não interativo) do instagram e sua versão mobile 
 ### [Instagram Clone](https://wagnernazarios.github.io/formacao-front-end/9%20-%204%C2%BA%20projeto%20Instagram%20Clone/index.html)
 
-)
+
 
