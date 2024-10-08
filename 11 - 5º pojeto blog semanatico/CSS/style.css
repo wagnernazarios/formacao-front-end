@@ -1,2 +1,50 @@
-body {
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: #444;
+  transition: 0.4s ease;
+
+  &:hover {
+    color: #37a1f7;
+  }
+}
+
+/** Navbar */
+
+.navbar {
+  padding: 1.5rem 2.5rem;
+  border-bottom: 2px solid #ddd;
+
+  .navbar-inner {
+    max-width: 69.37rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+/** main content */
+
+.container {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 2.5rem;
+  max-width: 69.37rem;
+  margin: 0 auto;
+
+  #posts-container {
+    flex: 3 1 0;
+  }
 }
