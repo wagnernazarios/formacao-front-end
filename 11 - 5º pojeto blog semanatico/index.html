@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,83 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <h2>Blog</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <div class="container">
+        <main id="posts-container">
+            <article class="post">
+                <img src="./assets/f1.jpg" width="270" alt="passeio de barco">
+                <h3 class="title">Em algum lugar</h3>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, magnam
+                    laboriosam similique ipsa laborum officiis earum culpa quidem aperiam assumenda?</p>
+                <a href="#">Ler mais</a>
+            </article>
+            <article class="post">
+                <img src="./assets/f2.jpg" width="270" alt="cachoeira">
+                <h3 class="title">Cachoeira secreta</h3>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, magnam
+                    laboriosam similique ipsa laborum officiis earum culpa quidem aperiam assumenda?</p>
+                <a href="#">Ler mais</a>
+            </article>
+            <article class="post">
+                <img src="./assets/f3.jpg" width="270" alt="baloes">
+                <h3 class="title">Colorindo o ceú</h3>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, magnam
+                    laboriosam similique ipsa laborum officiis earum culpa quidem aperiam assumenda?</p>
+                <a href="#">Ler mais</a>
+            </article>
+            <aside id="sidebar">
+                <section id="search-bar">
+                    <h4>Buscar</h4>
+                    <form>
+                        <input type="text" placeholder="Pesquise no blog">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </section>
+                <section id="categories">
+                    <h4>Categorias</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Paisagens</a></li>
+                            <li><a href="#">floresta</a></li>
+                            <li><a href="#">Aventura</a></li>
+                            <li><a href="#">Viagens longas</a></li>
+                            <li><a href="#">Cachoeiras</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section id="tags">
+                    <h4>Tags</h4>
+                    <div class="tags-container">
+                        <a href="#">Lifestyle</a>
+                        <a href="#">Viagem</a>
+                        <a href="#">Barcos</a>
+                        <a href="#">Trilhas</a>
+                        <a href="#">Tirolesa</a>
+                        <a href="#">Rafting</a>
+                        <a href="#">Parapente</a>
+                    </div>
+                </section>
+            </aside>
+        </main>
+
+    </div>
+    <footer id="footer">
+        <h2>Blog</h2>
+        <p>Melhores registros de aventuras</p>
+        <p>2024 &copy;wagnerNazario</p>
+    </footer>
 </body>
 
 </html>
