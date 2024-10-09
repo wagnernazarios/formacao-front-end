@@ -4,7 +4,7 @@ Durante os passos inicias na formação desenvolvi essas landing pages:
 ## Projetos 🚀
 
 ## HDC Host
-Durante o módulo de CSS Responsivo fiz um projeto de uma landing page de um site de hospedagem de site
+Durante o módulo de CSS Responsivo fiz um projeto de uma landing page de uma hospedagem de site
 #### [HDC Host Deployment ](https://wagnernazarios.github.io/formacao-front-end/7%20-%203%C2%BA%20projeto%20HDC%20Host/index.html)
 
 ## Instagram Clone
