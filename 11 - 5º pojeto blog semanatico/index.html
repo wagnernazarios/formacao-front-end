@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog HDC</title>
     <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -13,10 +19,11 @@
         <nav class="navbar">
             <div class="navbar-inner">
                 <h2>Blog</h2>
+                <button type="button" class="btn"><img src="assets/menu.png" alt=""></button>
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -25,25 +32,30 @@
     <div class="container">
         <main id="posts-container">
             <article class="post">
-                <img src="./assets/f1.jpg" alt="passeio de barco">
+                <img src="./assets/f1.jpg" class="post-img" alt="passeio de barco">
                 <h3 class="title">Em algum lugar</h3>
                 <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, magnam
                     laboriosam similique ipsa laborum officiis earum culpa quidem aperiam assumenda?</p>
-                <a href="#">Ler mais</a>
+                <p class="author">Por: Wagner Nazario</p>
+                <a href="#">Ler mais...</a>
             </article>
             <article class="post">
-                <img src="./assets/f2.jpg" alt="cachoeira">
+                <img src="./assets/f2.jpg" class="post-img" alt="cachoeira">
                 <h3 class="title">Cachoeira secreta</h3>
                 <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, magnam
                     laboriosam similique ipsa laborum officiis earum culpa quidem aperiam assumenda?</p>
-                <a href="#">Ler mais</a>
+                <p class="author">Por: Wagner Nazario</p>
+
+                <a href="#">Ler mais...</a>
             </article>
             <article class="post">
-                <img src="./assets/f3.jpg" alt="baloes">
+                <img src="./assets/f3.jpg" class="post-img" alt="baloes">
                 <h3 class="title">Colorindo o ceú</h3>
                 <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, magnam
                     laboriosam similique ipsa laborum officiis earum culpa quidem aperiam assumenda?</p>
-                <a href="#">Ler mais</a>
+                <p class="author">Por: Wagner Nazario</p>
+
+                <a href="#">Ler mais...</a>
             </article>
 
         </main>
@@ -85,7 +97,7 @@
     <footer id="footer">
         <h2>Blog</h2>
         <p>Melhores registros de aventuras</p>
-        <p>2024 &copy;wagnerNazario</p>
+        <p class="copy">2024 &copy;wagnerNazario</p>
     </footer>
 </body>
 

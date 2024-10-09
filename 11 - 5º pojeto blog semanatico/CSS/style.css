@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Georgia;
+  font-family: "Roboto";
   text-decoration: none;
   list-style: none;
 }
@@ -15,8 +15,7 @@ a {
   }
 }
 
-/** Navbar */
-
+/* Navbar */
 .navbar {
   padding: 1.5rem 2.5rem;
   border-bottom: 2px solid #ddd;
@@ -28,6 +27,14 @@ a {
     justify-content: space-between;
     align-items: center;
 
+    .btn {
+      display: none;
+      background-color: transparent;
+      border: none;
+      img {
+        width: 35px;
+      }
+    }
     .nav-links {
       display: flex;
       gap: 1rem;
@@ -35,8 +42,7 @@ a {
   }
 }
 
-/** main content */
-
+/* main content */
 .container {
   display: flex;
   gap: 3rem;
@@ -46,5 +52,143 @@ a {
 
   #posts-container {
     flex: 3 1 0;
+
+    .post {
+      margin-bottom: 2.5rem;
+
+      .post-img {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .title,
+      .description,
+      .author {
+        margin-bottom: 1rem;
+      }
+
+      .title {
+        font-size: 2rem;
+      }
+
+      .author {
+        color: #aaa;
+        font-weight: bold;
+      }
+
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* Sidebar */
+
+#sidebar {
+  flex: 1 1 0;
+
+  #search-bar,
+  #categories,
+  #tags {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+  }
+
+  #search-bar h4,
+  #categories h4,
+  #tags h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #search-bar {
+    form {
+      display: flex;
+      input {
+        padding: 0.5rem 1rem;
+        border: 1px solid #ddd;
+
+        &[type="submit"] {
+          border: none;
+          background-color: #37a1f7;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  #categories {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  #tags {
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      a {
+        background-color: #ddd;
+        padding: 0.5rem 0.7rem;
+        border: 1px solid #ddd;
+        transition: all 0.4s ease;
+
+        &:hover {
+          background-color: #37a1f7;
+          padding: 0.5rem 0.7rem;
+          border: 1px solid #37a1f7;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+
+#footer {
+  border-top: 2px solid #ddd;
+  padding: 3rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h2,
+  p,
+  .copy {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  .copy {
+    color: #aaa;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .navbar {
+    .navbar-inner {
+      .btn {
+        display: block;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  }
+  .container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
