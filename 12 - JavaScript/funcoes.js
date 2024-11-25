@@ -71,3 +71,19 @@ somefunction();
     untilTen(x, m);
   }
 })(140, 10);
+
+//arguments
+
+(function somar() {
+  let somar = 0;
+  for (i in arguments) {
+    somar += arguments[i];
+  }
+  console.log(somar);
+})(2, 5, 8);
+
+(function mostrarValores() {
+  for (i in arguments) {
+    console.log(` o valor ${arguments[0]} foi inserido`);
+  }
+})(4, 7, 8);
