@@ -79,88 +79,174 @@
 
 // Classes basicas
 
-const cachorro = {
-  raca: null,
-  patas: 4,
-};
+// const cachorro = {
+//   raca: null,
+//   patas: 4,
+// };
 
-const pastorAlemao = Object.create(cachorro); //modo antigo de instanciar uma classe
-pastorAlemao.raca = "Pastor Alemão";
+// const pastorAlemao = Object.create(cachorro); //modo antigo de instanciar uma classe
+// pastorAlemao.raca = "Pastor Alemão";
 
-console.log(pastorAlemao);
-console.log(`Ele tem ${pastorAlemao.patas} patas`);
+// console.log(pastorAlemao);
+// console.log(`Ele tem ${pastorAlemao.patas} patas`);
 
-const bulldog = Object.create(cachorro);
-bulldog.raca = "Bulldog";
+// const bulldog = Object.create(cachorro);
+// bulldog.raca = "Bulldog";
 
-console.log(bulldog);
+// console.log(bulldog);
 
-// função como classe - função construtora
-// assim o codigo se torna reutilizavel e mais profissional
+// // função como classe - função construtora
+// // assim o codigo se torna reutilizavel e mais profissional
 
-function criarCacharro(nome, raca) {
-  const cachorro = Object.create({});
+// function criarCacharro(nome, raca) {
+//   const cachorro = Object.create({});
 
-  cachorro.nome = nome;
-  cachorro.raca = raca;
+//   cachorro.nome = nome;
+//   cachorro.raca = raca;
 
-  return cachorro;
-}
+//   return cachorro;
+// }
 
-const bob = criarCacharro("Bob", "Vira-lata"); // outra forma de instanciar
-console.log(bob);
+// const bob = criarCacharro("Bob", "Vira-lata"); // outra forma de instanciar
+// console.log(bob);
 
-const jack = criarCacharro("Jack", "Labrador");
-console.log(jack);
-console.log(Object.getPrototypeOf(jack));
+// const jack = criarCacharro("Jack", "Labrador");
+// console.log(jack);
+// console.log(Object.getPrototypeOf(jack));
 
-// Funções como classes
+// // Funções como classes
 
-function Cachorro(nome, raca) {
-  this.nome = nome;
-  this.raca = raca;
-}
+// function Cachorro(nome, raca) {
+//   this.nome = nome;
+//   this.raca = raca;
+// }
 
-const mel = new Cachorro("Mel", "Golden Retrivier"); // Essa é a forma mais usada e atual de instanciar
-console.log(mel);
+// const mel = new Cachorro("Mel", "Golden Retrivier"); // Essa é a forma mais usada e atual de instanciar
+// console.log(mel);
 
-// Metodo na função construtora
+// // Metodo na função construtora
 
-Cachorro.prototype.uivar = function () {
-  console.log("Auuuu");
-};
+// Cachorro.prototype.uivar = function () {
+//   console.log("Auuuu");
+// };
 
-console.log(mel.uivar());
+// console.log(mel.uivar());
 
-// Classes ES6
-// No ES6 abandonamos as funções e usamos o CLASS para criação de classes.
-// o CONSTRUCTOR é uma função nativa das classes
+// // Classes ES6
+// // No ES6 abandonamos as funções e usamos o CLASS para criação de classes.
+// // o CONSTRUCTOR é uma função nativa das classes
 
-class Cachorros {
-  constructor(nome, raca) {
+// class Cachorros {
+//   constructor(nome, raca) {
+//     this.nome = nome;
+//     this.raca = raca;
+//   }
+// }
+
+// const Pitbull = new Cachorros("Titã", "PItbull");
+// console.log(Pitbull);
+
+// // Classes ES6 II
+// // as funções nas classes não precisam ter a palavra function
+
+// class Caminhao {
+//   constructor(eixos, cor) {
+//     this.eixos = eixos;
+//     this.cor = cor;
+//   }
+
+//   descreverCaminhao() {
+//     console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}`);
+//   }
+// }
+
+// const scania = new Caminhao(6, "Vermelhor");
+// console.log(scania); // dessa forma a função descreverCaminhao não irá aparecer.
+
+// scania.descreverCaminhao();
+
+// mudando propriedades pelo prototype
+// usando o prototype para setar algumas propriedades
+class Humano {
+  constructor(nome, idade) {
     this.nome = nome;
-    this.raca = raca;
+    this.idade = idade;
   }
 }
 
-const Pitbull = new Cachorros("Titã", "PItbull");
-console.log(Pitbull);
+const wagner = new Humano("Wagner", 31);
+console.log(wagner);
 
-// Classes ES6 II
-// as funções nas classes não precisam ter a palavra function
+Humano.prototype.idade = "Não definido";
+console.log(Humano.prototype.idade);
 
-class Caminhao {
-  constructor(eixos, cor) {
-    this.eixos = eixos;
-    this.cor = cor;
-  }
+// Symbols
+// São propriedades que nunca mudam e criadas com a funcao Symbol
 
-  descreverCaminhao() {
-    console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}`);
+class Aviao {
+  constructor(nome, turbinas) {
+    this.nome = nome;
+    this.turbinas = turbinas;
   }
 }
 
-const scania = new Caminhao(6, "Vermelhor");
-console.log(scania); // dessa forma a função não aparece.
+const asas = Symbol(); // invocamos a funcão simbol
 
-scania.descreverCaminhao();
+Aviao.prototype[asas] = 2; //Voce usa o prototype para setar o valor entre colchetes o nome do symbol
+
+const boieng = new Aviao("Boieng", 8);
+console.log(boieng);
+
+console.log(boieng[asas]); // para ver o symbol
+
+// GETTER e SETTER
+
+class Posts {
+  constructor(titulo, descricao, tags) {
+    this.titulo = titulo;
+    this.descricao = descricao;
+    this.tags = tags;
+  }
+
+  get exibirTitulo() {
+    return `Voce está lendo ${this.titulo}`;
+  }
+
+  set adicionarTags(tags) {
+    const tagsArray = tags.split(", ");
+    this.tags = tagsArray;
+  }
+}
+
+const myPosts = new Posts("Algum post", "Um post sobre programação");
+
+console.log(myPosts);
+console.log(myPosts.exibirTitulo);
+
+myPosts.adicionarTags = "Programação, Javascript, Front-end";
+console.log(myPosts, myPosts.exibirTitulo);
+
+//HERANÇA
+// com a palavra reservada 'extends' podemos obter propriedades de outras classes
+
+class Mamifero {
+  constructor(patas) {
+    this.patas = patas;
+  }
+}
+
+class Lobos extends Mamifero {
+  constructor(patas, nome) {
+    super(patas, patas); // para referenciar que patas é a mesma da classe Mamifero
+    this.nome = nome;
+  }
+}
+
+const will = new Lobos(4, "Will");
+
+console.log(will);
+
+// INSTANCEOF
+// Serve para saber se uma classe tem heranca de outro ou instanciado
+
+console.log(will instanceof Mamifero);
