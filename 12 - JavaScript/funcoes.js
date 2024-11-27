@@ -84,6 +84,6 @@ somefunction();
 
 (function mostrarValores() {
   for (i in arguments) {
-    console.log(` o valor ${arguments[0]} foi inserido`);
+    console.log(` o valor ${arguments[i]} foi inserido`);
   }
 })(4, 7, 8);
