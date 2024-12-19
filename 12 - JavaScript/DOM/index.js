@@ -68,3 +68,38 @@ mainContainer.appendChild(h3);
 const firstLink = document.querySelector("a");
 
 firstLink.setAttribute("href", "https://google.com"); // primeiro voce diz qual atributo quer alterar e depois o valor desse atributo
+
+// altura e largura
+// OffsetHeight e OffsetWidth
+// são metodos para visualização da
+// largura e altura do elemento via JS
+const footer = document.querySelector("footer");
+
+console.log(footer.offsetHeight);
+console.log(footer.offsetWidth);
+
+console.log(footer.clientHeight); //ele considera a borda e seu tamanho total
+console.log(footer.clientWidth);
+
+// posição do elemento
+//para isso usaremos o metodo
+// getBoudingClienteRect
+// Que mostrara todos
+//  os dados do elemento e sua posição
+
+const prod = produto2[1].getBoundingClientRect();
+
+console.log(prod);
+
+// Mudando o estilo dos elementos
+
+mainContainer.style.color = "red";
+mainContainer.style.backgroundColor = "#000";
+mainContainer.style.border = "2px solid red";
+
+// Mudando estilo de varios elementos
+
+for (const li of listItens) {
+  li.style.color = "#17a";
+  li.style.fontWeight = "bold";
+}
