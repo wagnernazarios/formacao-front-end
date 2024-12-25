@@ -143,21 +143,23 @@ window.addEventListener("beforeunload", (e) => {
 // tecnica utilizada para eventos disparar menos vezes
 // como o mousemove
 
+const debounce = (f, delay) => {
+  let timeout;
 
-const debounce = (f, delay){
-    let timeout;
-
-    return (...arguments)=>{
-        if(timeout){
-            clearTimeout(timeout);
-        }
-
-        timeout = setTimeout(()=>{
-            f.apply(arguments)
-        }, delay)
+  return (...arguments) => {
+    if (timeout) {
+      clearTimeout(timeout);
     }
-}
 
-window.addEventListener('mousemove', debounce(()=>{
-    console.log('Execultando o moucv move')
-}, 400))
+    timeout = setTimeout(() => {
+      f.apply(arguments);
+    }, delay);
+  };
+};
+
+window.addEventListener(
+  "mousemove",
+  debounce(() => {
+    console.log("Execultando o movimento do mouse");
+  }, 400)
+);
