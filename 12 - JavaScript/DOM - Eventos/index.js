@@ -136,7 +136,7 @@ window.addEventListener("load", () => {
 // dispara um evento ao tentar carregar
 window.addEventListener("beforeunload", (e) => {
   e.preventDefault();
-  e.returnValue = "";
+  BeforeUnloadEvent.returnValue = any;
 });
 
 //! debounce
