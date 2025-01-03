@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", serif;
+}
+
+body {
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #db4444 0%, #157bad 98%);
+  color: #fff;
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  #multiplication-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 18.75rem;
+    min-height: 25vh ;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: #000;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 3px 2px 4px #282828;
+
+    .form-control {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 1rem;
+      width: 115px;
+
+      label {
+        font-size: 0.8em;
+        font-weight: bold;
+        margin-bottom: .6rem;
+
+      }
+      input {
+        margin-bottom: 1rem;
+        width: 50px;
+        padding: 0.6rem 0.4rem;
+        flex: 1;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid #333;       
+      }     
+    }
+
+     input[type="submit"]  {
+      padding: 1rem;
+        max-height: 50px;
+        width: 215px;
+        border-radius: 10px;
+        background-color: #157bad;
+        color: #fff;
+        border: transparent;
+        font-weight: bold;
+        transition: all .4s ease-in-out;
+
+        &:hover{
+          background-color: #fff;
+          color: #157bad;
+          border: 1px solid #157bad;
+        }
+      }
+  }
+
+  #multiplication-table {
+    .multiplication-operation{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem auto;
+      width: 18.5rem;
+      padding: 2rem 1rem;
+      background-color: #fff;
+      color: #333;
+      border-radius: 15px;
+      box-shadow: 3px 2px 4px #282828;
+
+      .row{
+        display: flex;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        padding: 5px;
+        width: 75px;
+
+        &:last-child{
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    }
+  }
+}

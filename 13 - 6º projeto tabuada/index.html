@@ -7,9 +7,40 @@
     <title>Tabuada JS</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="./src/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <h1>TABUADA JS</h1>
+    <br>
+    <h2>Digite um numero e confirme para gerar uma tabuada</h2>
+    <form id="multiplication-form">
+        <div class="form-control">
+            <label for="number">Tabuada de:</label>
+            <input type="number" name="number" id="number" placeholder="3">
+        </div>
+
+        <div class="form-control">
+            <label for="multiplicator">Multiplicar por:</label>
+            <input type="number" name="multiplicat" id="multiplicator" placeholder="10">
+
+        </div>
+
+        <input type="submit" value="Calcular">
+    </form>
+
+    <div id="multiplication-table">
+        <h2 class="multiplication-title">Tabuada do número <span></span>:</h2>
+        <div class="multiplication-operation">
+            <p>Informe um número para Calcular uma tabuada</p>
+
+        </div>
+    </div>
 
 </body>
 
