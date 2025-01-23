@@ -31,10 +31,12 @@ a {
       display: none;
       background-color: transparent;
       border: none;
+
       img {
         width: 35px;
       }
     }
+
     .nav-links {
       display: flex;
       gap: 1rem;
@@ -106,6 +108,7 @@ a {
   #search-bar {
     form {
       display: flex;
+
       input {
         padding: 0.5rem 1rem;
         border: 1px solid #ddd;
@@ -175,17 +178,19 @@ a {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .navbar {
     .navbar-inner {
       .btn {
         display: block;
       }
+
       .nav-links {
         display: none;
       }
     }
   }
+
   .container {
     flex-wrap: wrap;
     align-items: center;

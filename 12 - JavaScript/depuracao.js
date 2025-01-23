@@ -75,8 +75,7 @@ try {
 
 //! FINALLY
 // é uma funcão que vai depois do TRY CATCH
-// onde a função é executada dando erro ou não no TRY
-
+// onde a função é executada dando erro ou não 
 try {
   let value = checkNumber("vaca"); // variaveis X e Y não existe então vai cair no bloco CATCH
   if (!value) {

@@ -23,7 +23,7 @@ buttons.forEach((btn) => {
         setTimeout(() => {
             image.classList.toggle('changing')
 
-        }, 300)
+        }, 200)
     })
 })
 
