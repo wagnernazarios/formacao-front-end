@@ -200,6 +200,7 @@ a {
 
       .btn {
         display: block;
+        width: 40px;
       }
 
       .nav-links {
