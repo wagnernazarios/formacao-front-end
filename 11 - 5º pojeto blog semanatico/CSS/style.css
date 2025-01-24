@@ -29,7 +29,7 @@ a {
     transition: .3s;
 
     .btn {
-      display: none;
+      opacity: 0;
       background-color: transparent;
       border: none;
       cursor: pointer;
@@ -199,8 +199,7 @@ a {
       flex-wrap: wrap;
 
       .btn {
-        display: block;
-        width: 40px;
+        opacity: 1;
       }
 
       .nav-links {
