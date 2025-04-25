@@ -18,7 +18,48 @@
 </head>
 
 <body>
-    <h1>Teste</h1>
+    <div class="container">
+        <div id="calc-container" class="hide">
+            <h2>Calculadora IMC</h2>
+            <form id="imc-form ">
+                <div class="form-imputs">
+                    <div class="form-controls">
+                        <label for="height">Altura</label>
+                        <input type="text" name="height" id="height" placeholder="Ex: 1.75">
+                    </div>
+                    <div class="form-controls">
+                        <label for="weight">Peso</label>
+                        <input type="text" name="weight" id="weight" placeholder=" Ex: 70.5">
+                    </div>
+                </div>
+                <div class="action-controls">
+                    <button id="calc-btn">Calcular</button>
+                    <button id="clear-btn">Limpar</button>
+                </div>
+
+
+        </div>
+        <div id="result-container">
+            <p id="imc-number">Seu IMC é: <span>25</span></p>
+            <p id="imc-info">Sua situação atual: <span> Magreza</span></p>
+            <h3>Confira as situações</h3>
+            <div id="imc-table">
+                <div class="table-header">
+                    <h3>IMC</h3>
+                    <h3>Classificação</h3>
+                    <h3>Obesidade</h3>
+                </div>
+                <div class="table-data">
+                    <p>Menor de 18,5</p>
+                    <p>Magreza</p>
+                    <p>0</p>
+                </div>
+            </div>
+            <button id="back-btn">Voltar</button>
+
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
