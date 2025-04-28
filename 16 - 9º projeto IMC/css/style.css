@@ -19,6 +19,8 @@ body {
     display: none !important;
 }
 
+
+
 .container {
     width: 25rem;
     height: 25rem;
@@ -105,10 +107,12 @@ body {
     }
 
     #result-container {
+
+
+
         text-align: center;
 
         span {
-            color: #1d1e;
             font-weight: bold;
         }
 
@@ -155,16 +159,31 @@ body {
                 p {
                     flex: 1;
 
-                    &:nth-child(3),
-                    &:nth-child(3) {
-                        max-width: 80px;
-                    }
                 }
             }
+
+
 
         }
 
 
+
+        /* Estados */
+        .good {
+            color: #1d1e;
+        }
+
+        .low {
+            color: #dbce12;
+        }
+
+        .medium {
+            color: #db6212;
+        }
+
+        .high {
+            color: #db1912;
+        }
 
 
 
