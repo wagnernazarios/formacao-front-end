@@ -1,2 +1,2 @@
-axios.defaults.headers.commmon("Accept") = "application/json";
-axios.defaults.headers.commmon("Authorization") = "MEUTOKENJSON";
+axios.defaults.headers.common["Accept"] = "application/json";
+axios.defaults.headers.common["Authorization"] = "MEUTOKENJSON";
