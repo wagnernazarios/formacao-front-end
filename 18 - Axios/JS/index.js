@@ -1,11 +1,15 @@
-
-console.log(axios)
-
-// primeiro request
+// primeiro request com axios
 
 const getData = async () => {
     try {
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users")
+        const response = await axios.get("https://jsonplaceholder.typicode.com/users",
+            // configurando o header
+            {
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                custom: "header"
+            })
         console.log(response)
         return response.data;
     } catch (error) {
@@ -14,10 +18,9 @@ const getData = async () => {
 
 }
 
-getData();
 
 
-//imprimindo elemento
+//imprimindo elemento -------------------------------------------------------------------------------
 
 const container = document.querySelector("#user-container");
 const select = document.querySelector("#users")
@@ -37,3 +40,26 @@ const printData = async () => {
 
 printData()
 
+// POST ------------------------------------------------------------------------------------------------
+
+
+const form = document.querySelector("#post-form")
+const titleInput = document.querySelector("#title")
+const bodyInput = document.querySelector("#body")
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    axios.post("https://jsonplaceholder.typicode.com/posts",
+        {
+
+            title: titleInput.value,
+            body: bodyInput.value,
+            userId: 1
+
+        })
+
+})
+
+
+// GLobal Instance -------------------------------------------------------------------------------------
