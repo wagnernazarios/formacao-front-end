@@ -2,7 +2,7 @@
 
 const getData = async () => {
     try {
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users",
+        const response = await postFetch.get("/users",
             // configurando o header
             {
                 headers: {
@@ -50,7 +50,7 @@ const bodyInput = document.querySelector("#body")
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    axios.post("https://jsonplaceholder.typicode.com/posts",
+    postFetch.post("/posts",
         {
 
             title: titleInput.value,
