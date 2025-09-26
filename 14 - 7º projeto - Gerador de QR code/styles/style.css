@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
     width: 400px;
     height: 260px;
-    transition: .5s;
+    transition: .3s;
 
     &.active {
         height: 500px;
@@ -87,7 +87,7 @@ body {
         border-radius: 10px;
         margin: 20px 15px;
         opacity: 0;
-        transition: .5s;
+        transition: .3s;
 
         &.active {
             opacity: 1;
