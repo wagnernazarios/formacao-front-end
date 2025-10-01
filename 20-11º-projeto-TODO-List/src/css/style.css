@@ -164,23 +164,24 @@ select {
 
 .todo {
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: space-around;
+    gap: .5rem;
     align-items: center;
     padding: 1rem 0;
+    margin: .5rem 0;
     border-bottom: 1px solid #3498db71;
     transition: var(--transition-speed);
-
-    .actions {
-        display: flex;
-        gap: .2rem;
-    }
 
     h3 {
         flex: 1;
         font-size: .9rem;
+        margin: 0 1rem 0 0;
     }
+
+
+
 }
+
 
 .done {
     background-color: #0E4166;
