@@ -20,7 +20,6 @@ function generatorQrCode() {
 
         btn.innerText = 'QR Code criado!'
 
-
     })
 
 }

@@ -1,23 +1,11 @@
-//importando componentes
 
 import './App.css'
-import FirstComponents from './components/FirstComponents'  
-import TemplateExpress from './components/TemplateExpress'
-import MyComponent from './components/MyComponent'
-import Event from './components/Event' // Importando o componente de eventos  
 
-function App() 
+function App() {
 
-{
-    return (
+  return (
     <>
-      <div>
-        <h1>Fundamentos do React</h1>
-      <FirstComponents/>
-      <TemplateExpress/>
-      <MyComponent />
-      <Event/> {/* Componente de eventos */}
-      </div>
+        <h1>Hello, world!</h1>
     </>
   )
 }
