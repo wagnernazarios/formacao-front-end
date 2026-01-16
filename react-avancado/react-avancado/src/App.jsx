@@ -1,4 +1,5 @@
 import './App.css'
+import ConditionRender from './ConditionRender'
 import ListRender from './ListRender'
 import UseState from './UseState'
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <UseState />
       <ListRender />
+      <ConditionRender />
     </>
   )
 }
